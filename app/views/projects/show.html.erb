@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <h2>
+  <strong><%= @project.school %></strong>   
+  </h2>
+  <div class="row">
+    <div class="offset2 span8">
+      <p>
+        <strong>Title:</strong>
+        <%= @project.title %>
+      </p>
+      <p>
+        <strong>City:</strong>
+        <%= @project.city %>
+      </p>
+
+      <p>
+        <strong>State:</strong>
+        <%= @project.state %>
+      </p>
+
+      <p>
+        <strong>Issue:</strong>
+        <%= @project.issue %>
+      </p>
+
+      <p>
+        <strong>Problem:</strong>
+        <%= @project.problem %>
+      </p>
+
+      <%= link_to 'Edit', edit_project_path(@project) %> |
+      <%= link_to 'Pitch', pitches_path %> |
+      <%= link_to 'Back', projects_path %> 
+      
+    </div>
+  </div>
+</div>

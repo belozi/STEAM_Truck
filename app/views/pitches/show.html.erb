@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+	<h2>
+	<strong></strong>	  
+	</h2>
+	<div class="row">
+		<div class="offset2 span8">
+		<p>
+		  <strong>Name:</strong>
+		  <%= @pitch.name %>
+		</p>
+
+		<p>
+		  <strong>Solution:</strong>
+		  <%= @pitch.solution %>
+		</p>
+
+		<%= link_to 'Edit', edit_pitch_path(@pitch) %> |
+		<%= link_to 'Back', pitches_path %>
+		</div>
+	</div>
+</div>
